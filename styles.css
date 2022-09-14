@@ -10,7 +10,20 @@ body {
   background-position: left top;
   font-family: "Zilla Slab", serif;
 }
-
+.btn-blog{
+  color: white;
+  float: right;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+  background-color: #198754;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 900;
+}
+.btn-blog:hover{
+  background-color: #eb6565;
+}
 .box-container {
   width: 70%;
   margin: 0 auto;
