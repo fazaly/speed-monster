@@ -125,7 +125,6 @@ const start = () => {
 };
 
 // START Countdown
-// debuging
 startBtn.addEventListener("click", start);
 
 // If history exists, show it
@@ -136,6 +135,5 @@ setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
 
-  // debugging
   document.getElementById("show-time").innerHTML = `${parseInt(startTime) ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);
