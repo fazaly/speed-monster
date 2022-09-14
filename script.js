@@ -45,8 +45,7 @@ const typeController = (e) => {
   if (newLetterCorrect) {
     display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
   } else {
-    display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
-    // errorcount 
+    display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`; 
     return errorCount++;
   }
 
@@ -115,6 +114,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
+      // countdown resolved
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
 
