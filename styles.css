@@ -203,3 +203,21 @@ button {
     flex-direction: column;
   }
 }
+
+@media only screen and (min-width:992px) and (max-width:1200px) {
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}
