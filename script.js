@@ -93,12 +93,12 @@ const gameOver = () => {
   errorCount = 0;
   userText = "";
   display.classList.add("inactive");
-};
+}
 
 const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
-};
+}
 
 const start = () => {
   // If already started, do not start again
@@ -122,7 +122,7 @@ const start = () => {
     }
     count--;
   }, 1000);
-};
+}
 
 // START Countdown
 startBtn.addEventListener("click", start);

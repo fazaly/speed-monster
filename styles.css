@@ -21,9 +21,7 @@ body {
   font-size: 20px;
   font-weight: 900;
 }
-.btn-blog:hover{
-  background-color: #eb6565;
-}
+
 .box-container {
   width: 70%;
   margin: 0 auto;
@@ -194,7 +192,8 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+/* Small Devices */
+@media only screen and (max-width: 767px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
@@ -204,6 +203,26 @@ button {
   }
 }
 
+/* Tablet Devices */
+@media only screen and (min-width:768px) and (max-width:991px) {
+  .box-container {
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  #histories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}
+
+/* Desktop Devices */
 @media only screen and (min-width:992px) and (max-width:1200px) {
   .box-container {
     padding: 0 20px;
