@@ -137,3 +137,8 @@ setInterval(() => {
 
   document.getElementById("show-time").innerHTML = `${parseInt(startTime) ? parseInt(timeSpent) : 0} seconds`;
 }, 1000);
+
+// HTML prevent space bar from scrolling page
+window.onkeydown = function(e) { 
+  return !(e.keyCode == 32);
+};
